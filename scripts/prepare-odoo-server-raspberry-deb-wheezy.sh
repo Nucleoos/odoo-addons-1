@@ -56,7 +56,7 @@ apt-get install python-dateutil python-pypdf python-requests \
  python-paramiko python-software-properties
 
 echo "pip packages will be install.."
-pip install passlib beautifulsoup4 evdev reportlab qrcode polib unidecode validate_email pyDNS pysftp  python-slugify pyusb
+pip install passlib beautifulsoup4 evdev reportlab qrcode polib unidecode validate_email pyDNS pysftp  python-slugify
 
 # echo "npm packages will be install.."
 # npm install -g less less-plugin-clean-css
@@ -95,7 +95,7 @@ read mypos
 if [ "$mypos" = "Y" ]; then
   echo "PoS will be install..."
   sudo pip install pyserial
-  sudo pip install --pre pyusb
+  sudo pip install pyusb
 else
   echo "PoS is not prepared!"
 fi
